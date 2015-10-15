@@ -1,0 +1,436 @@
+/*--------------------------------------------------------------
+1.0 General Organization
+--------------------------------------------------------------*/
+body{
+    background-image: url(CSAbackground.png);
+}
+
+div{
+    position: static;
+}
+
+h1, h2, h3, h4, h5, h6, p,.indentlist  {
+    line-height: 150%;
+}
+
+
+header, section, footer, aside, nav,article, figure, figcaption{
+    display: block;
+    position: static;
+    font-family: sans-serif;
+    font: "Lucida Grande";
+    font-weight: lighter;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+
+/*--------------------------------------------------------------
+2.0 Navigation
+--------------------------------------------------------------*/
+
+nav{
+    align-content: right;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    height: 45px;
+    opacity: 0.9;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    position: fixed;
+    text-align:right;
+    width: 100%;
+    z-index: 9999;
+        display: -moz-inline-box; /* for firefox */
+        display: inline-block;
+}
+
+nav ul{
+    padding-right: 7%;
+}
+nav li {
+    align-content: center;
+    display: inline-block;
+    line-height: normal;
+    margin-top: -14px;
+    padding: 20px;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+3.0 Headers, Headings & Logo
+--------------------------------------------------------------*/
+
+.bodyheading{
+    padding-top: 10%;
+}
+
+header{
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    padding-left: 7%;
+    text-align: left;   
+}
+
+.welcome{
+    padding-top:5%;
+}
+
+/*--------------------------------------------------------------
+4.0 Body & Content Arrangement
+--------------------------------------------------------------*/
+
+a{
+    color: #000000;
+}
+
+article {
+    align-content: center;
+    background: #ffffff;
+    padding: 10px;
+    padding-top: 3%;
+}
+
+#content {
+    height:auto;
+    background: white;
+    border-left: 55px solid hsla(0,0%,99%,.4); 
+    border-right: 55px solid hsla(0,0%,99%,.4); 
+    background-clip: padding-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%
+}
+
+p, thcinfo{
+    font-size: 15px;
+}
+
+
+#text-body-banner {
+    height: 30vh;
+}
+
+#text-body-about {
+    height: 120vh;
+}
+
+#text-body-thc {
+    height: 100vh;
+}
+
+#text-body-events {
+    height: 150vh;
+}
+
+#text-body-contact{
+    height:100vh;   
+}
+
+
+/*--------------------------------------------------------------
+5.0 Lists
+--------------------------------------------------------------*/
+
+ul {
+    list-style-type: none;
+}
+li{
+    margin: 0 0 5px 0;
+}
+
+
+/*--------------------------------------------------------------
+6.0 Forms
+--------------------------------------------------------------*/
+
+.form-name{
+    margin-left: 5em;
+    width: 50%;
+    height: 2em;
+    padding-left: 5%
+}
+.form-email{
+    margin-left: 5.5em;
+    width: 50%;
+    height: 2em;
+    padding-left: 5%
+}
+.form-message{
+    margin-left: 3em;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1em;
+    width: 45%;
+    height: 20em;
+}
+#message-label{
+    padding-bottom: 10px;
+    text-align: left;
+}
+.form-body{
+    margin: 0 auto;
+    text-align: center;
+}
+
+button,
+input[type="button"]
+input[type="submit"]{
+    background-color: #ffffff;
+    border-color: #000000;
+	border-style: solid;
+    border-width: 1px;
+	color: #000;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 100;
+	line-height: 2;
+	padding: 6px 15px;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+textarea 
+input[type="text"]
+input[type="textarea"]{
+	font-size: 100%;
+	vertical-align: baseline; 
+    overflow: auto;
+	vertical-align: top; 
+}
+
+/*--------------------------------------------------------------
+7.0 Images
+--------------------------------------------------------------*/
+.eventgallery{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.thcpics{
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 40%;
+}
+
+#futureevents{
+    padding-bottom: 50px;
+}
+
+.headerphoto {
+    display: inline-block;
+    width: 100%;
+}
+
+.bannerpics {
+    padding-top: 8%;
+}
+
+/*--------------------------------------------------------------
+8.0 Social Media Section
+--------------------------------------------------------------*/
+
+.social-media-logos{
+    max-height: 50px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#social-media-section{
+    align-content: center;
+    padding-top: 2.5%;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+9.0 Footer
+--------------------------------------------------------------*/
+
+footer{
+    background-color: #ffffff;
+    padding:3%;
+}
+
+#credit{
+    font-size: 8px;
+}
+
+/*--------------------------------------------------------------
+10.0 Mobile + Smaller Screen Integration
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 1150px){
+    .bannerpics {
+        padding-top: 5em;
+    }
+
+    .bodyheading{
+        padding-top: 15%;
+    }
+    h1{
+        font-size: 15px;
+    }
+    
+    nav ul{
+        padding-right: 2%;
+    }
+    nav li {
+        padding: 10px;
+    }
+
+    .logo{
+        padding-left: 2%;
+    }
+    
+    #text-body-banner {
+        height: 20vh;
+    }
+
+    #text-body-about {
+        height: 130vh;
+    }
+
+    #text-body-thc {
+        height: 120vh;
+    }
+
+    #text-body-events {
+        height: 120vh;
+    }
+
+}
+
+@media screen and (max-width: 830px){
+    
+    .bodyheading, .bannerpics{
+        padding-top: 10em;
+    }
+    h1{
+        font-size: 15px;
+    }
+    
+    nav{
+        height: 8em;
+    }
+    nav ul{
+        padding-right: 2%;
+    }
+    nav li {
+        display: block;
+        padding: 10px;
+    }
+    .eventgallery{
+        width: 90%;
+    }
+    
+    #text-body-banner {
+        height: 15vh;
+    }
+    
+    #text-body-about {
+        height: 150vh;
+    }
+
+}
+    
+@media screen and (max-width: 565px){
+    .bodyheading, .bannerpics{
+        padding-top: 12em;
+    }
+    h4, h5, h6, p,.indentlist  {
+        font-size: 13px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    
+    nav{
+        align-content: center;
+        height: 10em;
+        text-align: center;
+    }
+    nav ul{
+        padding-right: 0%;
+    }
+    nav li {
+        display: block;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 13%;
+    }
+
+    .logo{
+        align-content: center;
+        display: block;
+        float: none;
+        padding-right: 4%;
+        text-align: center;
+    }
+
+    .social-media-logos{
+        max-height: 20px;
+    }
+    #text-body-banner {
+        height: 10vh;
+    }
+
+    #text-body-about {
+        height: 180vh;
+    }
+
+    #text-body-thc {
+        height: 150vh;
+    }
+
+    .form-name, .form-email{
+        margin-left: 1em;
+        width: 80%;
+        height: 2em;
+        padding-left: 5%
+    }
+
+    .form-message{
+        margin-left: 1em;
+        padding: 5%;
+        width: 80%;
+        height: 8em;
+    }
+    #message-label{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .form-body{
+        margin: 0 auto;
+        text-align: center;
+    }   
+    
+    footer{
+        font-size: 10px;
+    }
+
+    #credit{
+        font-size: 7px;
+    }
+    
+    
+}
+
+
