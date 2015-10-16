@@ -26,7 +26,7 @@
         <div id="text-body-banner">
         <article> 
             <div class ="bannerpics">
-                <img src="bannerpicture.jpg" class="headerphoto">
+                <img src="/pictures/bannerpicture.jpg" class="headerphoto">
             </div>
         </article>
         </div>
@@ -63,7 +63,7 @@
                     <a name="thc"></a>
                     <h1 class="bodyheading">THERE IS HOPE CAMPAIGN</h1>
                     <div>
-                        <img src="thc1.jpg" class="thcpics"><img src="thc2.jpg" class="thcpics">
+                        <img src="/pictures/thc1.jpg" class="thcpics"><img src="/pictures/thc2.jpg" class="thcpics">
                     </div>
                     <p class="thcinfo">During the 2009-2010 academic year, the Caribbean Students Association (CSA) organized the There is Hope Campaign as it allowed the group to integrate its members' interests in education with their passion for mentoring youth and working with the broader Caribbean community. The There is Hope Campaign has evolved over the past four years into an alternative spring break service project whose aim is to combat and account for the residual effects of colonialism by (1) helping children in the Caribbean develop a critical consciousness, enabling them to contribute to the shaping of their world; (2) framing education and success in the context of students’ histories and personal narratives and (3) advocating for curricula within Caribbean education systems that promote more positive self- image in primary school student.</p>
                     <p>Thus far, CSA has completed sixth successful projects in St. Mary, Jamaica (2010), St. David, Grenada (2011), Mahaut, Dominica (2012), Bridgetown, Barbados (2013), Dennery, St. Lucia (2014) and New Providence, Bahamas (2015). We are currently preparing for our seventh There is Hope Project.</p>
@@ -78,10 +78,10 @@
                     <a name="events"></a>
                     <h1 class="bodyheading">EVENTS</h1>
                     <h3>Upcoming Events</h3>
-                    <a href="https://www.facebook.com/events/1632884513629876/" target="_blank"><img src="bbhmm.jpg" class="eventgallery"></a>
+                    <a href="https://www.facebook.com/events/1632884513629876/" target="_blank"><img src="/pictures/bbhmm.jpg" class="eventgallery"></a>
                     <br><br>
                     <h3>Past Events</h3>
-                    <a href="https://www.facebook.com/events/554346614723142/" target="_blank"><img src="dollarama1.jpg" class="eventgallery"></a><br><br>
+                    <a href="https://www.facebook.com/events/554346614723142/" target="_blank"><img src="/pictures/dollarama1.jpg" class="eventgallery"></a><br><br>
                 </div>
             </article>
         </div>
@@ -90,18 +90,22 @@
                 <div>
                     <h1 class="bodyheading">CONTACT US</h1><br>
                         <div class="form-body">
-                        <form method="post" name="contactform" class="contact-form" action="contact-form-to-email.php">
+                        <form role="form" method="post" class="contact-form" action="contact.php">
                         <p>
                             <label for="name">Name: </label>
                             <input type="text" name="name" class="form-name">
                         </p>
                             <p>
-                            <label for="email">Email: </label>
+                            <label for="contact-email">Email: </label>
                             <input type="text" name="email" class="form-email">
                         </p>
                         <p>
-                            <label for="message" id="message-label">Message: </label>
-                            <input type="textarea" name="message" class="form-message">
+                            <label for="contact-subject">Subject: </label>
+                            <input type="text" name="subject" class="form-subject">
+                        </p>
+                        <p>
+                            <label for="contact-message" id="message-label">Message: </label>
+                            <textarea name="message" class="form-message"></textarea>
                         </p>
                         <p>
                             <button type="submit">SUBMIT</button>
@@ -109,15 +113,15 @@
                         </form>
                         </div>
                         <div id="social-media-section">
-                        <a href="https://www.facebook.com/CSAatCU/" target="_blank"><img src="fblogo.png" class="social-media-logos"></a>
-                        <a href="https://twitter.com/caribbeanatcu" target="_blank"><img src="twitterlogo.png" class="social-media-logos"></a>
+                        <a href="https://www.facebook.com/CSAatCU/" target="_blank"><img src="/pictures/fblogo.png" class="social-media-logos"></a>
+                        <a href="https://twitter.com/caribbeanatcu" target="_blank"><img src="/pictures/twitterlogo.png" class="social-media-logos"></a>
                     </div>
                 </div>
             </article>
         </div>
     </div>
     <footer>&copy; Caribbean Students' Association at Columbia University <br><br>
-        <div id="credit">Built by Samantha Stultz</div> </footer>
+        <div id="credit">Built by <a href="https://github.com/samanthaks" class="creditlink">Samantha Stultz</a></div></footer>
    
 </div>
 </body>
