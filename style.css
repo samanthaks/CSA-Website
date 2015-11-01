@@ -200,7 +200,7 @@ footer{
 
 @media only screen and (max-width: 1150px){
     #aboutanchor{
-        margin-top: -6em;
+        margin-top: -7em;
     }
     .anchor{
         position: absolute;
@@ -225,7 +225,7 @@ footer{
 
 @media only screen and (max-width: 830px){
     #aboutanchor{
-        margin-top: -9em;
+        margin-top: -10em;
     }
     .anchor{
         position: absolute;
