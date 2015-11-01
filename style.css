@@ -1,9 +1,6 @@
 /*--------------------------------------------------------------
 1.0 General Organization
 --------------------------------------------------------------*/
-body{
-    background-image: url(/pictures/CSAbackground.png);
-}
 
 div{
     position: static;
@@ -14,7 +11,7 @@ h1, h2, h3, h4, h5, h6, p,.indentlist  {
 }
 
 
-header, section, footer, aside, nav,article, figure, figcaption{
+section, footer, aside, nav,article, figure, figcaption{
     display: block;
     position: static;
     font-family: sans-serif;
@@ -37,8 +34,8 @@ nav{
     font-weight: lighter;
     height: 45px;
     opacity: 0.9;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    padding-bottom: 1.75em;
+    padding-top: 1em;
     position: fixed;
     text-align:right;
     width: 100%;
@@ -67,17 +64,8 @@ nav li {
 /*--------------------------------------------------------------
 3.0 Headers, Headings & Logo
 --------------------------------------------------------------*/
-
 .bodyheading{
     padding-top: 10%;
-}
-
-header{
-    height: auto;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-    width: 100%;
 }
 
 .logo{
@@ -85,13 +73,17 @@ header{
     float: left;
     font-weight: bold;
     padding-left: 7%;
-    text-align: left;   
+    text-align: left;
 }
 
 .welcome{
     padding-top:5%;
 }
 
+#aboutanchor{
+  position:absolute;
+  margin-top: -8em;
+}
 /*--------------------------------------------------------------
 4.0 Body & Content Arrangement
 --------------------------------------------------------------*/
@@ -103,44 +95,34 @@ a{
 article {
     align-content: center;
     background: #ffffff;
-    padding: 10px;
-    padding-top: 3%;
+    padding-bottom: 4em;
 }
 
-#content {
+body{
+    background-image: url(http://www.columbia.edu/cu/carib/images/CSAbackground.png);
+    margin: 0 !important;
+}
+
+#content{
     height:auto;
-    background: white;
-    border-left: 55px solid hsla(0,0%,99%,.4); 
-    border-right: 55px solid hsla(0,0%,99%,.4); 
+    background: #ffffff;
+    border-left: 55px solid hsla(0,0%,99%,.4);
+    border-right: 55px solid hsla(0,0%,99%,.4);
     background-clip: padding-box;
+    margin-left: 1%;
+    margin-right: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 3%
+    padding-bottom: 3%;
+}
+
+.contactus{
+    text-align: center;
+    align-content: center;
 }
 
 p, thcinfo{
     font-size: 15px;
-}
-
-
-#text-body-banner {
-    height: 30vh;
-}
-
-#text-body-about {
-    height: 120vh;
-}
-
-#text-body-thc {
-    height: 100vh;
-}
-
-#text-body-events {
-    height: 150vh;
-}
-
-#text-body-contact{
-    height:100vh;   
 }
 
 
@@ -157,71 +139,7 @@ li{
 
 
 /*--------------------------------------------------------------
-6.0 Forms
---------------------------------------------------------------*/
-
-.form-name{
-    border-style: groove;
-    border-width: 1px;
-    margin-left: 5em;
-    width: 50%;
-    height: 2em;
-    padding-left: 5%
-}
-.form-email{
-    border-style: groove;
-    border-width: 1px;
-    margin-left: 5.5em;
-    width: 50%;
-    height: 2em;
-    padding-left: 5%
-}
-.form-message{
-    margin-left: 3em;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1em;
-    width: 45%;
-    height: 10em;
-}
-#message-label{
-    display: block;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.form-body{
-    margin: 0 auto;
-    text-align: center;
-}
-
-button,
-input[type="button"]
-input[type="submit"]{
-    background-color: #ffffff;
-    border-color: #000000;
-	border-style: solid;
-    border-width: 1px;
-	color: #000;
-	display: inline-block;
-	font-size: 1rem;
-	font-weight: 100;
-	line-height: 2;
-	padding: 6px 15px;
-	text-align: center;
-	vertical-align: middle;
-	text-transform: uppercase;
-}
-textarea 
-input[type="text"]
-input[type="textarea"]{
-	font-size: 100%;
-	vertical-align: baseline; 
-    overflow: auto;
-	vertical-align: top; 
-}
-
-/*--------------------------------------------------------------
-7.0 Images
+6.0 Images
 --------------------------------------------------------------*/
 .eventgallery{
     display: block;
@@ -234,11 +152,8 @@ input[type="textarea"]{
     margin: 0 auto;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 20px;
     width: 40%;
-}
-
-#futureevents{
-    padding-bottom: 50px;
 }
 
 .headerphoto {
@@ -247,11 +162,12 @@ input[type="textarea"]{
 }
 
 .bannerpics {
-    padding-top: 8%;
+    padding-top: 6em;
+    padding-bottom: 2em;
 }
 
 /*--------------------------------------------------------------
-8.0 Social Media Section
+7.0 Social Media Section
 --------------------------------------------------------------*/
 
 .social-media-logos{
@@ -266,12 +182,12 @@ input[type="textarea"]{
 }
 
 /*--------------------------------------------------------------
-9.0 Footer
+8.0 Footer
 --------------------------------------------------------------*/
 
 footer{
     background-color: #ffffff;
-    padding:3%;
+    padding:3em;
 }
 
 #credit{
@@ -279,59 +195,59 @@ footer{
 }
 
 /*--------------------------------------------------------------
-10.0 Mobile + Smaller Screen Integration
+9.0 Mobile + Smaller Screen Integration
 --------------------------------------------------------------*/
 
-@media screen and (max-width: 1150px){
-    .bannerpics {
-        padding-top: 5em;
+@media only screen and (max-width: 1150px){
+    #aboutanchor{
+        margin-top: -6em;
     }
-
-    .bodyheading{
-        padding-top: 15%;
+    .anchor{
+        position: absolute;
+        margin-top: -2em;
+    }
+    .bannerpics {
+        padding-top: 6em;
     }
     h1{
         font-size: 15px;
     }
-    
+    .logo{
+        padding-left: 2%;
+    }
     nav ul{
         padding-right: 2%;
     }
     nav li {
         padding: 10px;
     }
-
-    .logo{
-        padding-left: 2%;
-    }
-    
-    #text-body-banner {
-        height: 20vh;
-    }
-
-    #text-body-about {
-        height: 130vh;
-    }
-
-    #text-body-thc {
-        height: 120vh;
-    }
-
-    #text-body-events {
-        height: 120vh;
-    }
-
 }
 
-@media screen and (max-width: 830px){
-    
-    .bodyheading, .bannerpics{
+@media only screen and (max-width: 830px){
+    #aboutanchor{
+        margin-top: -9em;
+    }
+    .anchor{
+        position: absolute;
+        margin-top: -9em;
+    }
+    .bannerpics{
         padding-top: 10em;
+    }
+
+    #content {
+        border-left: 20px solid hsla(0,0%,99%,.4);
+        border-right: 20px solid hsla(0,0%,99%,.4);
+        background-clip: padding-box;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .eventgallery{
+        width: 90%;
     }
     h1{
         font-size: 15px;
     }
-    
     nav{
         height: 8em;
     }
@@ -342,44 +258,30 @@ footer{
         display: block;
         padding: 10px;
     }
-    .eventgallery{
-        width: 90%;
-    }
-    
-    #text-body-banner {
-        height: 15vh;
-    }
-    
-    #text-body-about {
-        height: 150vh;
-    }
+
 
 }
-    
-@media screen and (max-width: 565px){
-    .bodyheading, .bannerpics{
-        padding-top: 12em;
+
+@media only screen and (max-width: 580px){
+    .bannerpics{
+        padding-top: 9em;
     }
-    h4, h5, h6, p,.indentlist  {
-        font-size: 13px;
+
+    #credit{
+        font-size: 7px;
     }
+
+    footer{
+        font-size: 10px;
+    }
+
+
     h1{
         font-size: 15px;
     }
-    
-    nav{
-        align-content: center;
-        height: 10em;
-        text-align: center;
-    }
-    nav ul{
-        padding-right: 0%;
-    }
-    nav li {
-        display: block;
-        padding-top: 10px;
-        padding-left: 0px;
-        padding-right: 13%;
+
+    h4, h5, h6, p,.indentlist  {
+        font-size: 13px;
     }
 
     .logo{
@@ -390,66 +292,24 @@ footer{
         text-align: center;
     }
 
+    nav{
+        align-content: center;
+        height: 7em;
+        text-align: center;
+    }
+    nav ul{
+        padding-right: 0%;
+    }
+    nav li {
+        display: inline-flex;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 13%;
+        margin-left: -5%;
+    }
+
     .social-media-logos{
         max-height: 20px;
     }
-    #text-body-banner {
-        height: 10vh;
-    }
 
-    #text-body-about {
-        height: 180vh;
-    }
-
-    #text-body-thc {
-        height: 150vh;
-    }
-
-    .form-name, .form-email, .form-subject{
-        margin-left: 1em;
-        width: 80%;
-        height: 2em;
-        padding-left: 5%
-    }
-
-    .form-message{
-        margin-left: 1em;
-        padding: 5%;
-        width: 80%;
-        height: 8em;
-    }
-    #message-label{
-        padding-bottom: 10px;
-        text-align: center;
-    }
-    .form-body{
-        margin: 0 auto;
-        text-align: center;
-    }   
-    
-    footer{
-        font-size: 10px;
-    }
-
-    #credit{
-        font-size: 7px;
-    }
-    
-    
-}
-
-
-
-.form-subject {
-    border-style: groove;
-    border-width: 1px;
-    margin-left: 4em;
-    width: 50%;
-    height: 2em;
-    padding-left: 5%
-}
-
-textarea {
-    border-style: solid;
-    border-width: 1px;
 }
